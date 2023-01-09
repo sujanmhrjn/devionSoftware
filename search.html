@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+
+    <title>Webpage</title>
+    <link rel="stylesheet" href="css/style1.css">
+</head>
+<body class='body_base'>
+    <div class="page_wrapper">
+        <div class="top_header_bar">
+            <div class="login"><a id="login_lnk">Login</a></div>
+            <div class="resources  std_dropdown_menu">
+                <span>▼</span> Resources
+                <ul class="resource_list">
+                    <li><a rel="noopener" onclick="tabOpen('http://www.datasheetlocator.com');">Datasheet Locator</a></li>
+                    <li><a onclick="openModalNotifyWide('curconv.htm');">Currency Converter</a></li>
+                    <li><a onclick="openModalStd('translang.htm');">Language Translator</a></li>
+                    <li><a onclick="openModalStd('worldclock.htm');">World Clock</a></li>
+                    <li><a onclick="openModalStd('browsers.htm');">Supported Browsers</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class='main'>
+            <div class="main_header">
+                <div class="banner_ad">
+                    <iframe id="divad" frameborder="0" scrolling="no" src="https://www.netcomponents.com/adbnr.htm"></iframe>
+                </div>
+                
+                <div class="logo">
+    
+                    <a href="/">
+                         <img src="images/netcomp_top_en.png" alt="netCOMPONENTS: Electronic Component Sourcing">
+                    </a>
+    
+                </div> <!-- logo -->
+            </div>
+            <!-- /.main-header -->
+            <div class="info_hdr">
+                <table>
+                    <tbody><tr>
+    
+                        <td class="langs">
+                            <div class="flags" data-clicked="0">
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td><a id="langflag_es" href="/es/" data-lang="es" data-hasqtip="4" title='Español'></a></td>
+                                            <td><a id="langflag_fr" href="/fr/" data-lang="fr" data-hasqtip="5" title='Français'></a></td>
+                                            <td><a id="langflag_de" href="/de/" data-lang="de" data-hasqtip="6" title='Deutsch'></a></td>
+                                            <td><a id="langflag_it" href="/it/" data-lang="it" data-hasqtip="7" title='Italiano'></a></td>
+                                            <td><a id="langflag_nl" href="/nl/" data-lang="nl" data-hasqtip="8" title='Nederlands'></a></td>
+                                            <td><a id="langflag_po" href="/po/" data-lang="po" data-hasqtip="9" title='Português'></a></td>
+                                            <td><a id="langflag_ru" href="/ru/" data-lang="ru" data-hasqtip="10" title='Русский'></a></td>
+                                            <td><a id="langflag_ja" href="/ja/" data-lang="ja" data-hasqtip="11" title='日本語'></a></td>
+                                            <td><a id="langflag_ch" href="/ch/" data-lang="ch" data-hasqtip="12" title='繁體中文'></a></td>
+                                            <td><a id="langflag_zh" href="/zh/" data-lang="zh" data-hasqtip="13" title='简体中文'></a></td>
+                                            <td><a id="langflag_ko" href="/ko/" data-lang="ko" data-hasqtip="14" title='한국어'></a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </td>
+    
+                        <td class="side_tabs">
+                            <div class="side_tabs">
+                                <div class="mbrsup">
+                                    <div class="mbrsup-logout std_dropdown_menu">
+                                        <a href="search.htm">Members</a>
+                                    </div>
+                                    <div class="mbrsup-logout std_dropdown_menu">
+                                        <a href="upload.htm">Suppliers</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody></table>
+            </div>
+
+
+            <div class="content" id="main_content">
+              
+                <div class="">
+                    <div class="pgTtl_square">
+                        <h3 class="pgTtl">Sponsored Live Part Search Results</h3>
+                    </div>
+
+                    <p class="txt_margin">
+                        The results displayed here are actual line items listed in the database and are for sale by suppliers. <b>Only sponsor contact information is displayed</b>. Registered members of netCOMPONENTS are able to view the contact information, and much more, of all the suppliers listing these line items.
+                    </p>
+
+                    <p class="txt_margin">To view this information for all suppliers in the future, and for an array of powerful sourcing features, <a href="javascript:goReg();" class="lnk">Register Now!</a>
+                    </p>
+
+                    <div class="sponsors">
+                        <h3>Sponsors for Asia</h3>
+                    
+                        <div class="logos">
+                        
+                            <div class="sponsor " id="sponsor_487006">
+                                <a class="lnk" rel="sponsored" ><img src="images/487006.png" alt="Arrow" data-hasqtip="1046" oldtitle="Arrow" title="" aria-describedby="qtip-1046"></a>
+                                <span class="auth_badges">
+                                    <span class="authorized" data-hasqtip="1047" oldtitle="Authorized" title=""></span>
+                                </span>
+                            </div>
+                        
+                            <div class="sponsor " id="sponsor_121350">
+                                <a class="lnk" rel="sponsored"><img src="images/121350.png?v=20191105014053" alt="Digi-Key" data-hasqtip="1048" oldtitle="Digi-Key" title="" aria-describedby="qtip-1048"></a>
+                                <span class="auth_badges">
+                                    <span class="authorized" data-hasqtip="1049" oldtitle="Authorized" title=""></span>
+                                </span>
+                            </div>
+                        
+                            <div class="sponsor " id="sponsor_960887">
+                                <a class="lnk" rel="sponsored"><img src="images/960887.png?v=20220406030424" alt="Perfect Parts Corporation" data-hasqtip="1050" oldtitle="Perfect Parts Corporation" title="" aria-describedby="qtip-1050"></a>
+                                <span class="auth_badges">
+                                    <span class="authorized" data-hasqtip="1051" oldtitle="Authorized" title=""></span>
+                                </span>
+                            </div>
+                        
+                            <div class="sponsor " id="sponsor_1059896">
+                                <a class="lnk" rel="sponsored"><img src="images/1059896.png?v=20191105040117" alt="Texas Instruments" data-hasqtip="1052" oldtitle="Texas Instruments" title=""></a>
+                                <span class="auth_badges">
+                                    <span class="authorized" data-hasqtip="1053" oldtitle="Authorized" title=""></span>
+                                </span>
+                            </div>
+                        
+                            <div class="sponsor " id="sponsor_891476">
+                                <a class="lnk" rel="sponsored" ><img src="images/891476.png?v=20200203112340" alt="WireMasters" data-hasqtip="1054" oldtitle="WireMasters" title="" aria-describedby="qtip-1054"></a>
+                                <span class="auth_badges">
+                                    <span class="authorized" data-hasqtip="1055" oldtitle="Authorized" title=""></span>
+                                </span>
+                            </div>
+                        
+                        </div>
+                    
+                        <div class="logos">
+                        
+                            <div class="sponsor active" id="sponsor_497335">
+                                <a class="lnk" rel="sponsored"><img src="images/497335.png?v=20200302101824" alt="Chip 1 Exchange " data-hasqtip="1056" oldtitle="Chip 1 Exchange " title="" aria-describedby="qtip-1056"></a>
+                                <span class="auth_badges">
+                                <span class="mixed" data-hasqtip="1057" oldtitle="Authorized and Other Inventory" title=""></span>
+                                </span>
+                            </div>
+                        
+                            <div class="sponsor " id="sponsor_1044239">
+                                <a class="lnk" rel="sponsored"><img src="images/1044239.png?v=20220915024010" alt="CoreStaff" data-hasqtip="1058" oldtitle="CoreStaff" title=""></a>
+                                <span class="auth_badges">
+                                <span class="mixed" data-hasqtip="1059" oldtitle="Authorized and Other Inventory" title=""></span>
+                                </span>
+                            </div>
+                        
+                            <div class="sponsor " id="sponsor_1038890">
+                                <a class="lnk" rel="sponsored"><img src="images/1038890.png?v=20200211041320" alt="Flip Electronics" data-hasqtip="1060" oldtitle="Flip Electronics" title="" aria-describedby="qtip-1060"></a>
+                                <span class="auth_badges">
+                                    <span class="mixed" data-hasqtip="1061" oldtitle="Authorized and Other Inventory" title=""></span>
+                                </span>
+                            </div>
+                        
+                            <div class="sponsor " id="sponsor_249895">
+                                <a class="lnk" rel="sponsored"><img src="images/249895.png?v=20210709095732" alt="Live Wire Electronics " data-hasqtip="1062" oldtitle="Live Wire Electronics " title=""></a>
+                                <span class="auth_badges">
+                                
+                                </span>
+                            </div>
+                        
+                            <div class="sponsor " id="sponsor_461464">
+                                <a class="lnk" rel="sponsored" ><img src="images/461464.png?v=20230103095019" alt="Sensible Micro Corporation" data-hasqtip="1063" oldtitle="Sensible Micro Corporation" title="" aria-describedby="qtip-1063"></a>
+                                <span class="auth_badges">
+                                
+                                </span>
+                            </div>
+                        
+                        </div>
+                    
+                    </div>
+
+                    <table class="partsrch_form sponsor">
+                        <tbody>
+                            <tr>
+            
+                                <td>
+                                    <span class="srchres">Search Results for: </span> 
+                                    <input class="text-uppercase" type="text" size="20" maxlength="30" name="pn1" value="SALT" id="pn1">
+                                    
+                                    <div class="optn searchMode" id="srchMode1">
+                                
+                                        <span class="val active hasdropdown" id="srchopt_mode1">Starts With<span>▼</span></span>
+                                        <div id="srch_modes_srchMode1" class="option_selector">
+                                            <span class="val current" data-parent="srchopt_mode1" data-type="search_lgc" data-value="begins">Starts With<span>▼</span></span>
+                                            <span class="val inactive" data-parent="srchopt_mode1" data-type="search_lgc" data-value="equals" data-hasqtip="1059">Equals<span>▼</span></span>
+                                        </div>
+                                
+                                    </div>
+                        
+                                    <input type="submit" value="Search">
+                                
+                                </td>
+                                <th class="total_txt">
+                                        830 line items found.
+                                    <br><div id="api_status_SALT" class="api_status"></div>
+                                </th>
+                
+                                <td class="buttons_left">
+                                    <div class="partsrch_lnks">
+                                        <a class="btn_blue" href="home.htm">New Search</a>				
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <h3 class="smartresults_caption">Sponsored Results:</h3>
+                    
+                    <div class="div_table_float_hdr">
+                        <table class="partsrch_results std_list table_float_hdr">
+                
+                            <thead>
+                                <tr class="header results_full">
+                                    <th class="pn">Part Number</th>
+                                    <th class="td"><span class="td_icon" title="Technical Data"></span></th>
+                                    <th class="ds"><span class="dsl_icon" title="Datasheet"></span></th>
+                                    <th class="mfr"><a href="javascript:srt(4)"><span class="sort_icon" title="Sort By Mfr"></span></a>Mfr</th>
+                                    <th class="dc">DC</th>
+                                    <th class="desc">Description</th>
+                                    <th class="upl">Uploaded</th>
+                                    <th class="ctry"><a href="javascript:srt(5)"><span class="sort_icon" title="Sort By Country/Region"></span></a>Ctr</th>
+                                    <th class="qty"><a href="javascript:srt(2)"><span class="sort_icon" title="Sort By Qty"></span></a>Qty</th>
+                                    <th class="prc"><span class="prcbrk_hdr" title="Pricing"></span></th>
+                                    <th class="cart"><span class="gocart" title="Supplier Shopping Cart"></span></th>
+                                    <th class="reg"></th>
+                                    <th class="sup">Supplier</th>
+                                    <th class="spn"></th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td class="pn">SALTC264D40F200N</td>
+                                    <td class="td"></td>
+                                    <td class="ds"></td>
+                                    <td class="mfr"></td>
+                                    <td class="dc"></td>
+                                    <td class="desc"><span>AVAILABLE</span></td>
+                                    <td class="upl">01/04/2023</td>
+                                    <td class="ctry">US</td>
+                                    <td class="qty">1696</td>
+                                    <td class="prc"></td>
+                                    <td class="cart"></td>
+                                    <td class="reg">
+                                        <a>
+                                            <span class="reg_block" title="Registered on netCOMPONENTS: 2003">
+                                                <span class="yr0l_icon"></span><span class="yr3r_icon"></span>
+                                                <span class="reg10_icon"></span>
+                                            </span>
+                                        </a>
+                                    </td>
+                                    <td class="sup">
+                                        <span class="nosqrs"></span>
+                                        <span class="noauth_icon"></span>
+                                            <a class="suplink lnk">Chip 1 Exchange</a>
+                                    </td>
+                                    <td class="spn">
+                                        <span data-sponsor="497335" data-part="SALT"></span>
+                                        <span class="sponsor" title="Site Sponsor">Sponsor</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="pn">SALTC299TP128F300NBC</td>
+                                    <td class="td"></td>
+                                    <td class="ds"></td>
+                                    <td class="mfr"></td>
+                                    <td class="dc"></td>
+                                    <td class="desc">
+                                        <span>AVAILABLE</span>
+                                    </td>
+                                    <td class="upl">01/04/2023</td>
+                                    <td class="ctry">US</td>
+                                    <td class="qty">1300</td>
+                                    <td class="prc"></td>
+                                    <td class="cart"></td>
+                                    <td class="reg">
+                                        <a> 
+                                            <span class="reg_block" title="Registered on netCOMPONENTS: 2003">
+                                            <span class="yr0l_icon"></span>
+                                            <span class="yr3r_icon"></span>
+                                            <span class="reg10_icon"></span>
+                                            </span>
+                                        </a>
+                                    </td>
+                                    <td class="sup">
+                                        <span class="nosqrs"></span>
+                                        <span class="noauth_icon"></span>
+                                        <a class="suplink lnk">Chip 1 Exchange</a>
+                                    </td>
+                                    <td class="spn">
+                                        <span></span>
+                                        <span class="sponsor" title="Site Sponsor">Sponsor</span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                    </table>
+                    </div>
+
+                    <h3 class="smartresults_caption">Additional Results (netCOMPONENTS member registration required to view)</h3>
+                    
+                    <div class='div_table_float_hdr'>
+                        <table class="partsrch_results std_list table_float_hdr">
+
+                            <thead>
+                                <tr class="header results_demo float_hdr">
+                
+                                    <th class="pn">Part Number</th>
+                                    <th class="td"><span class="td_icon" title="Technical Data" ></span></th>
+                                    <th class="ds"><span class="dsl_icon" title="Datasheet" ></span></th>
+                                    <th class="mfr"><span class="sort_icon" data-sort="4" data-hasqtip="1058"></span>Mfr</th>
+                                    <th class="dc">DC</th>
+                                    <th class="desc">Description</th>
+                                    <th class="upl">Uploaded</th>
+                                    <th class="ctry"><span class="sort_icon" data-sort="5" data-hasqtip="1059"></span>Ctr</th>
+                                    <th class="qty"><span class="sort-on_icon" data-sort="0" data-hasqtip="1060"></span>Qty</th>
+                                    <th class="prc"><span class="prcbrk_hdr" data-hasqtip="53" title="Pricing" ></span></th>
+                                    <th class="cart"><span class="gocart" data-hasqtip="54"  title="Supplier Shopping Cart" ></span></th>
+                                        <th class="reg"></th>
+                    
+                                    <th class="sup">Supplier</th>
+                                    <th class="spn"></th>
+                                </tr>
+                    
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="pn">SAL - TC275TP-64F200W DC</td>
+                                    <td class="td">*</td>
+                                    <td class="ds">*</td>
+                                    <td class="mfr"></td>
+                                    <td class="dc">22+</td>
+                                    <td class="desc"><span>ORIGINAL NEW</span></td>
+                                    <td class="upl">**/**/**</td>
+                                    <td class="ctry">**</td>
+                                    <td class="qty">7550</td>
+                                    <td class="prc">**</td>
+                                    <td class="cart">**</td>
+                                    <td class="reg">**</td>
+                                    <td class="sup">
+                                        <span class="nosqrs"></span>
+                                        <span class="noauth_icon"></span>
+                                        <a class="suplink lnk" title="Register to view this supplier's information">Register Now</a>
+                                    </td>
+                                    <td class="spn"><span data-sponsor="1120562" data-part="SALT"></span></td>
+                                </tr>
+                                <tr>
+                                    <td class="pn">SAL - TC275TP-64F200W DC</td>
+                                    <td class="td">*</td>
+                                    <td class="ds">*</td>
+                                    <td class="mfr"></td>
+                                    <td class="dc">22+</td>
+                                    <td class="desc"><span>ORIGINAL NEW</span></td>
+                                    <td class="upl">**/**/**</td>
+                                    <td class="ctry">**</td>
+                                    <td class="qty">7550</td>
+                                    <td class="prc">**</td>
+                                    <td class="cart">**</td>
+                                    <td class="reg">**</td>
+                                    <td class="sup">
+                                        <span class="nosqrs"></span>
+                                        <span class="noauth_icon"></span>
+                                        <a class="suplink lnk" title="Register to view this supplier's information">Register Now</a>
+                                    </td>
+                                    <td class="spn"><span data-sponsor="1120562" data-part="SALT"></span></td>
+                                </tr>
+                                <tr>
+                                    <td class="pn">SAL - TC275TP-64F200W DC</td>
+                                    <td class="td">*</td>
+                                    <td class="ds">*</td>
+                                    <td class="mfr"></td>
+                                    <td class="dc">22+</td>
+                                    <td class="desc"><span>ORIGINAL NEW</span></td>
+                                    <td class="upl">**/**/**</td>
+                                    <td class="ctry">**</td>
+                                    <td class="qty">7550</td>
+                                    <td class="prc">**</td>
+                                    <td class="cart">**</td>
+                                    <td class="reg">**</td>
+                                    <td class="sup">
+                                        <span class="nosqrs"></span>
+                                        <span class="noauth_icon"></span>
+                                        <a class="suplink lnk" title="Register to view this supplier's information">Register Now</a>
+                                    </td>
+                                    <td class="spn"><span data-sponsor="1120562" data-part="SALT"></span></td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+
+                                    <td colspan='10'>
+                                        <strong>828 line items found.</strong>
+                                    </td>
+                        
+                                        <td colspan='4' class="buttons_left">
+                                            <div class="partsrch_lnks">
+                                                <a class="btn_blue" style='padding:8px;' href="home.htm">New Search</a>				
+                                            </div>
+                                        </td>
+                                    </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+                
+            </div>
+    
+            <div class="netcomp_bottom">
+    
+                <div class="footer">
+    
+                    <div class="ftr_social_items">
+                        <a rel="noopener" class="icon_facebook" href="javascript:tabOpen('https://www.facebook.com/netcomponents');" title=""></a>
+                        <a rel="noopener" class="icon_twitter" href="javascript:tabOpen('https://twitter.com/netcomponents');" title=""></a>
+    
+                    </div>
+                    <div class="ftr_menu_item"><a href="javascript:openModalStd('info.htm?int=1')">Information</a></div>
+                    <div class="ftr_menu_item"><a href="javascript:openModalStd('contact.htm?int=1')">Contact Us</a></div>
+                    <div class="ftr_menu_item"><a href="javascript:openModalStd('terms.htm?int=1')">Terms Of Use</a></div>
+                    <div class="ftr_menu_item"><a href="javascript:openModalStd('privacy.htm?int=1')">Privacy Policy</a></div>
+                    <div class="copy"><a href="copyright.htm">© Copyright 1997-2023, </a>
+                    <a href="https://www.netcomponents.com/sitemap/">netCOMPONENTS, Inc.</a></div>
+    
+                    </div>
+                <div class="clr"></div>
+            </div>
+        </div>
+        <!-- /.main -->
+    </div>
+
+    <div class='modal' id='login-modal'>
+        <div class='modal-overlay'></div>
+        <div class='modal-dialog'>
+            <div class='modal-close'></div>
+            <div class='modal-content'>
+                <div class='modal-title'>Login</div>
+                <div class='modal-body'>
+                    <form method='post' id='login-form'>
+                        <table class='modal-table login-table'>
+                            <tbody>
+                                <tr>
+                                    <th>Account #:</th>
+                                    <td><input type="text" size="18" name="org" maxlength="10" value="" id="org" required></td>
+                                </tr>
+                                <tr>
+                                    <th>Login Name:</th>
+                                    <td><input type="text" name="login" size="18" maxlength="15" value="" id='loginName' required></td>
+                                </tr>
+                                <tr>
+                                    <th>Password:</th>
+                                    <td><input type="password" size="18" name="pwd" data-hasqtip="1" aria-describedby="qtip-1" id='pwd' required></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" class="auto_login">
+                                        <input type="checkbox" value="1" name="auto" id="auto" checked="">&nbsp; <label for="auto">Automatically log me in.</label>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </form>
+                </div>
+                <div class='modal-footer'>
+                    <div class="float_lft"><a class="lnk" onclick="goPwd()">Forgot My Password</a></div>
+                    <input type="button" onclick="verifyLogin()" value="Login">
+                    <div class="clr"></div>
+                </div>
+            </div>
+           
+        </div>
+    </div>
+    <!-- /#login-modal -->
+
+
+    <div class='modal modal-lg' id='member-registration-modal'>
+        <div class='modal-overlay'></div>
+        <div class='modal-dialog'>
+            <div class='modal-close'></div>
+            <div class='modal-content'>
+                <div class='modal-title'>
+                    Member Registration
+                    <div class="wizard">
+                        <ul class="wizard-steps">
+                            <!-- --><li id="step-1" data-value="1" class="start-step active-step"><div><p>Company Information</p></div></li>
+                            <!-- --><li id="step-2" data-value="2" class=""><div><p>Membership Fee Payment Information</p></div></li>
+                            <!-- --><li id="step-3" data-value="3" class=""><div><p>Office Location Information</p></div></li>
+                            <!-- --><li id="step-4" data-value="4" class=""><div><p>User Information</p></div></li>
+                            <!-- --><li id="step-5" data-value="5" class=""><div><p>Administrative Contacts</p></div></li>
+                            <!-- --><li id="step-6" data-value="6" class="finish-step"><div><p>Finish</p></div></li>
+                            <!-- -->
+                        </ul>
+                    </div>
+                </div>
+                <div class='modal-body'>
+                    <p class="txt_margin">The member registration process enables you to set up netCOMPONENTS access for one location or for locations enterprise wide. You can then set up any number of buyers and contacts.</p>
+                    <form method='post' id='member-registration-form'>
+                        <table class='modal-table registration-table'>
+                            <tbody>
+                                <tr>				
+                                    <th class="req">Company:</th>
+                                    <td><input type="text" maxlength="30" name="compname" size="30" value=""></td></tr>
+                                <tr>
+                                    <th>Year Established:</th>
+                                    <td class="descr"><input type="text" name="year" size="4" maxlength="4" value=""></td>
+                                </tr>
+                                <tr>
+                                    <th></th>
+                                    <td class="txt_sm">Format year as: 1997, 2021</td>
+                                </tr>
+                
+                
+                                <tr>
+                                    <th>Employees:</th>
+                                    <td>
+                                        <select name="loc_employees">
+                                            <option value=""></option>
+                                            <option value="5">1 - 9</option>
+                                            <option value="15">10 - 19</option>
+                                            <option value="35">20 - 49</option>
+                                            <option value="75">50 - 99</option>
+                                            <option value="300">100 - 499</option>
+                                            <option value="750">500 - 999</option>
+                                            <option value="3000">1,000 - 4,999</option>
+                                            <option value="7500">5,000 - 9,999</option>
+                                            <option value="15000">10,000 - 19,999</option>
+                                            <option value="20000">20,000+</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">Annual Electronic Component Purchasing (USD):</td>
+                                </tr>
+                                <tr class="pdng_bot">
+                                    <td></td>							
+                                    <td>
+                                        <select name="loc_yearlysales">
+                                            <option value=""></option>
+                                            <option value="50000">0 - 99,999 (USD)</option>
+                                            <option value="175000">100,000 - 249,999 (USD)</option>
+                                            <option value="375000">250,000 - 499,999 (USD)</option>
+                                            <option value="750000">500,000 - 999,999 (USD)</option>
+                                            <option value="3000000">1,000,000 - 4,999,999 (USD)</option>
+                                            <option value="7500000">5,000,000 - 9,999,999 (USD)</option>
+                                            <option value="15000000">10,000,000 - 19,999,999 (USD)</option>
+                                            <option value="35000000">20,000,000 - 49,999,999 (USD)</option>
+                                            <option value="75000000">50,000,000 - 99,999,999 (USD)</option>
+                                            <option value="300000000">100,000,000 - 499,999,999 (USD)</option>
+                                            <option value="750000000">500,000,000 - 999,999,999 (USD)</option>
+                                            <option value="1000000000">1,000,000,000+ (USD)</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr class="pdng_bot">
+                                    <th class="req">Company Type:</th>
+                                    <td>
+                                        <select name="comptype">
+                                            <option value=""></option>
+                                            <option value="Original Equipment Manufacturer (OEM)">Original Equipment Manufacturer (OEM)</option>
+                                            <option value="Contract Assembly House (CEM)">Contract Assembly House (CEM)</option>
+                                            <option value="Distributor/Exporter/Reseller">Distributor/Exporter/Reseller</option>
+                                            <option value="Other">Other</option>
+                                        </select>
+                                    </td>
+                                </tr>	
+                                <tr>
+                                    <td colspan="2">If Company Type is <strong>OEM</strong> please list product(s) manufactured:</td>
+                                </tr>
+                                <tr class="pdng_bot">
+                                    <td></td>
+                                    <td><input type="text" maxlength="50" name="oem" size="30" value=""></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">If Company Type is <strong>Other</strong> please specify:</td>
+                                </tr>
+                                <tr>
+                                    <td></td>							
+                                    <td><input type="text" maxlength="30" name="other" size="30" value=""></td>
+                                </tr>
+                                <tr class="pdng_bot">
+                                    <td></td>
+                                    <td><span class="txt_sm">Example: Design House, Repair Facility, Research Institution</span></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">Please indicate below how you found out about our service:</td>
+                                </tr>
+                                <tr class="pdng_bot">
+                                    <td></td>
+                                    <td><input type="text" maxlength="50" name="customerfindout" size="30" value=""></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </form>
+                </div>
+                <div class='modal-footer'>
+                    <input type="button" class="action_btn" value="Next >>" onclick="nxt(2,1)" id="button2" name="button2" disabled="">
+                    <input type="button" class="action_btn" value="Cancel" onclick="closeModal()" id="button1" name="button1" disabled="">
+                </div>
+            </div>
+           
+        </div>
+    </div>
+    <!-- /#member-registration-modal -->
+
+
+    <script src='js/jquery.js'></script>
+    <script src='js/script.js'></script>
+    <script>
+        
+        function verifyLogin(){
+            var account = $("#login-form #org");
+            var username = $("#login-form #loginName");
+            var password = $("#login-form #pwd");
+            var auto = $("#login-form #auto");
+
+            if(!username.val() || !password.val() || !account.val()){
+                alert("Please fill all the fields");
+                return false;
+            }
+
+            $("#login-form").submit();
+        }
+
+        var step=1;
+
+        function memberRegistrationFormStep1(){
+            var isCompanyFilled = false,
+                isYearEstablishedFilled = false,
+                isEmployeesFilled = false,
+                isAnnualECPurchasingFilled =false,
+                isCompanyTypeFilled = false,
+                isOemFilled=false
+
+            
+        }
+      
+    </script>
+</body>
+</html>

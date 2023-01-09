@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+
+    <title>Webpage</title>
+    <link rel="stylesheet" href="css/style1.css">
+</head>
+<body class='body_base'>
+    <div class="page_wrapper">
+        <div class="top_header_bar">
+            <div class="login"><a id="login_lnk">Login</a></div>
+            <div class="resources  std_dropdown_menu">
+                <span>▼</span> Resources
+                <ul class="resource_list">
+                    <li><a rel="noopener" onclick="tabOpen('http://www.datasheetlocator.com');">Datasheet Locator</a></li>
+                    <li><a onclick="openModalNotifyWide('curconv.htm');">Currency Converter</a></li>
+                    <li><a onclick="openModalStd('translang.htm');">Language Translator</a></li>
+                    <li><a onclick="openModalStd('worldclock.htm');">World Clock</a></li>
+                    <li><a onclick="openModalStd('browsers.htm');">Supported Browsers</a></li>
+                </ul>
+            </div>
+            <div class='c-toggler'>
+                <span></span>
+                Switch to new version
+            </div>
+        </div>
+
+        <div class='main'>
+            <div class="main_header">
+                <div class="banner_ad">
+                    <iframe id="divad" frameborder="0" scrolling="no" src="https://www.netcomponents.com/adbnr.htm"></iframe>
+                </div>
+                
+                <div class="logo">
+    
+                    <a href="/">
+                         <img src="images/netcomp_top_en.png" alt="netCOMPONENTS: Electronic Component Sourcing">
+                    </a>
+    
+                </div> <!-- logo -->
+            </div>
+            <!-- /.main-header -->
+            <div class="info_hdr">
+                <table>
+                    <tbody><tr>
+    
+                        <td class="langs">
+                            <div class="flags" data-clicked="0">
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td><a id="langflag_es" href="/es/" data-lang="es" data-hasqtip="4" title='Español'></a></td>
+                                            <td><a id="langflag_fr" href="/fr/" data-lang="fr" data-hasqtip="5" title='Français'></a></td>
+                                            <td><a id="langflag_de" href="/de/" data-lang="de" data-hasqtip="6" title='Deutsch'></a></td>
+                                            <td><a id="langflag_it" href="/it/" data-lang="it" data-hasqtip="7" title='Italiano'></a></td>
+                                            <td><a id="langflag_nl" href="/nl/" data-lang="nl" data-hasqtip="8" title='Nederlands'></a></td>
+                                            <td><a id="langflag_po" href="/po/" data-lang="po" data-hasqtip="9" title='Português'></a></td>
+                                            <td><a id="langflag_ru" href="/ru/" data-lang="ru" data-hasqtip="10" title='Русский'></a></td>
+                                            <td><a id="langflag_ja" href="/ja/" data-lang="ja" data-hasqtip="11" title='日本語'></a></td>
+                                            <td><a id="langflag_ch" href="/ch/" data-lang="ch" data-hasqtip="12" title='繁體中文'></a></td>
+                                            <td><a id="langflag_zh" href="/zh/" data-lang="zh" data-hasqtip="13" title='简体中文'></a></td>
+                                            <td><a id="langflag_ko" href="/ko/" data-lang="ko" data-hasqtip="14" title='한국어'></a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </td>
+    
+                        <td class="side_tabs">
+                            <div class="side_tabs">
+                                <div class="mbrsup">
+                                    <div class="mbrsup-logout std_dropdown_menu">
+                                        <a href="search.htm">Members</a>
+                                    </div>
+                                    <div class="mbrsup-logout std_dropdown_menu">
+                                        <a href="upload.htm">Suppliers</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody></table>
+            </div>
+
+
+            <div class="content" id="main_content">
+                <div class="page_right_block">
+                    <div class="ps_hdr" style="background: url('/images/pf4.png') top left repeat transparent"><iframe src="https://www.netcomponents.com/sf.htm?4"></iframe></div>
+                    <div class="tbl_home_stats">
+                        <h3 class="hdr_whtbl">Current Statistics</h3>
+                        <table class="std_list">		
+                            <tbody><tr>
+                                <td>Electronic Components</td><td style="text-align: right">900 Billion+</td></tr>
+                            <tr>
+                                <td>Line Items</td><td style="text-align: right">50 Million+</td></tr>
+                            <tr>
+                                <td>Page Views / Month</td><td style="text-align: right">3,500,000+</td></tr>
+                
+                            <tr>
+                                <td>Suppliers</td><td style="text-align: right">3,000+</td></tr>
+                        </tbody></table>
+                    </div>
+                    <div class="expandable_wrapper">
+                        <div class="expandable-item">
+                            <h3 class="expandable-header">For Component Manufacturers</h3>
+                            <div class="expandable-content"><p class="txt_margin">netCOMPONENTS offers a custom designed solution exclusively for component manufacturers called the Distributor Inventory Locator Program (DILP<sup>sm</sup>). netCOMPONENTS has been designing and implementing custom DILP<sup>sm</sup> solutions for the electronics industry since 1997 and is considered a worldwide leader in this type of outsourced service.</p>
+                
+                            <p class="txt_margin">For more information on DILP<sup>sm</sup>, including a detailed description, pricing, and demo, please contact a netCOMPONENTS representative at <a href="mailto:info@netcomponents.com" class="lnk">info@netcomponents.com</a>.</p></div>
+                        </div>
+                        <div class="expandable-item">
+                            <h3 class="expandable-header">Advertising</h3>
+                            <div class="expandable-content"><p class="txt_margin">netCOMPONENTS offers banner advertising programs on sites that are published by netCOMPONENTS targeting electronic component buyers, supply chain managers, procurement professionals and electronic engineers. For more information on availability and pricing, please contact us at <a href="mailto:advertising@netcomponents.com" class="lnk">advertising@netcomponents.com</a>.</p></div>
+                        </div>
+                        <div class="expandable-item">
+                            <h3 class="expandable-header">netCOMPONENTS Escrow</h3>
+                            <div class="expandable-content"><p class="txt_margin">Additional information on netCOMPONENTS Escrow is available to registered Member and Supplier users by clicking on the 'Escrow' menu option after login.</p></div>
+                        </div>
+                
+                    </div>
+                    <div class="measures_block">
+                        <a class="lnk_img" onclick="javascript:openModalStd('measures.htm?int=1');"><img class="ctrftg_icon" src="images/ctrftg_en.gif" alt="Measures to Combat Unlawful Activities "></a>
+                        <a class="lnk" onclick="javascript:openModalStd('measures.htm?int=1');">Measures to Combat Unlawful Activities </a>
+                        <a class="lnk" onclick="javascript:openModalStd('acresources.htm?int=1');">Anti-Counterfeiting Resources</a>
+                    </div>
+                    
+                    <div class="anniversary_block">
+                        <img src="images/26years.png" alt=""><br>
+                        <a class="lnk" onclick="javascript:openModalStd('timeline.htm?int=1');">netCOMPONENTS Timeline</a>
+                    </div>
+                </div>
+                    
+                <div class="page_main_content">
+                    <div class="pgTtl_square"><p>netCOMPONENTS is a market leader in sourcing services for the worldwide electronic components industry. netCOMPONENTS is the world's premier destination for the sourcing and procurement of electronic components, connecting members (buyers) and suppliers (sellers) in a direct and vendor-neutral environment!</p></div>
+                
+                    <h1 class="homeTtl">Sponsored Live Part Search</h1>
+                    <div class="homepage_search">	
+                        <div class="bg_shadow">
+                            <div class="demo_srch_descr">This is a sponsored live part search and will return actual line items listed on netCOMPONENTS. <b>Only sponsor contact information is displayed</b>. netCOMPONENTS lists the sources for millions of active, passive and electromechanical component line items including integrated circuits (ICs), semiconductors, diodes, transistors, memories, microprocessors, capacitors, resistors, switches, relays, connectors and much more!</div>
+                            <div class="smartsearchbox">
+                                <div id="livesearch" style="display: none;"></div>
+                                    <form name="f1" id="f1" action="results.htm" method="get" autocomplete="off">
+                
+                                    <input type="hidden" name="d" value="1">
+                
+                                    <input type="hidden" id="search_flt" name="flts" value="1">
+                                    <input type="hidden" id="search_t" name="t" value="f">
+                                    <input type="hidden" id="search_sm" name="sm" value="">
+                                    <input type="hidden" name="r" value="1">
+                                    <input type="hidden" id="search_lgc" name="lgc" value="begins">
+                                    <input type="hidden" id="pn1" name="pn1" value="">
+                    
+                                    <table class="searchbox">
+                                        <tbody><tr class="search_options">
+                                            <td><div class="overlay"></div></td>
+                                            <td class="options">
+                                                <div class="options">
+                                                    <div class="optn" id="srchType">
+                
+                                                        <span class="val active hasdropdown" id="srchopt_type">Full Search<span>▼</span></span>
+                                                        <div id="srch_type" class="option_selector">
+                                                            <span id="srch_type_full" class="val current" data-parent="srchopt_type" data-type="search_t" data-value="FULL">Full Search<span>▼</span></span>
+                                                            <span class="val inactive" data-parent="srchopt_type" data-type="search_t" data-value="MULTI" data-hasqtip="15">Multi-Search<span>▼</span></span>
+                                                            <span class="val inactive" data-parent="srchopt_type" data-type="search_t" data-value="SMS" data-hasqtip="16">Smart Multi-Search<span>▼</span></span>
+                                                        </div>
+                
+                                                    </div><!--
+                                                    -->
+                                                        <div class="optn searchMode" id="srchMode">
+                                                    
+                                                            <span class="val active hasdropdown" id="srchopt_mode">Starts With<span>▼</span></span>
+                                                            <div id="srch_modes_srchMode" class="option_selector">
+                                                                <span class="val current" data-parent="srchopt_mode" data-type="search_lgc" data-value="begins">Starts With<span>▼</span></span>
+                                                                <span class="val inactive" data-parent="srchopt_mode" data-type="search_lgc" data-value="equals" data-hasqtip="17">Equals<span>▼</span></span>
+                                                            </div>
+                                                    
+                                                        </div>
+                                                    <!--
+                                                    --><div>
+                                                        <span class="optn_check disabled" data-hasqtip="18">
+                
+                                                            <input id="srchopt_flts" type="checkbox" name="srchopt_flts" value="1">
+                
+                                                            <label for="srchopt_flts">Filters</label>
+                                                        </span>
+                    
+                                                        <span class="optn_check disabled" data-hasqtip="19">
+                
+                                                            <input id="srchopt_asst" type="checkbox" name="srchopt_asst" value="1" checked="">
+                
+                                                            <label for="srchopt_asst" data-hasqtip="0" oldtitle="<h3>Part Search Assist:</h3>Display part number search results preview upon entry of characters in part number search field." title="">Assist</label>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td id="searchbox1">
+                                                <span data-hasqtip="1" oldtitle="Add Part Number" title=""><a class="addpart search_disabled" id="addpn" data-hasqtip="20"></a></span>
+                                            </td>
+                                            <td class="inpt">
+                                                <textarea class="searchbox_input" placeholder='Type or Paste Part Number(s)' spellcheck="false" maxlength="30"></textarea>
+                                            </td>
+                                            <td>
+                                                <a id="srchBtn" class="searchbtn search_disabled"></a>
+                                            </td>
+                                        </tr>
+                                    </tbody></table>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                
+                
+                    <div class="reg_block">
+                        <div class="reg_block_row">
+                            <div class="reg_member top_square_left">
+                                
+                                <h2 class='title'>
+                                    Member (Buyer) Services
+                                    <div class='popup-wrapper'>
+                                        <a class="lnkucase_nodec popup_container" data-content="member_features">Features</a>
+    
+                                        <div class="popup" id="member_features" style='top: -226px; left: 0px; width: 451px;'>
+                                            <p class="txt_margin">Membership includes:</p>
+                                            <ul class="bulleted_list">
+                                            <li>Part Searches</li>
+                                            <li>Unlimited locations and users</li>
+                                            <li>Search by Worldwide Region</li>
+                                            <li>Search results differentiation of authorized suppliers</li>
+                                            <li>Search results differentiation of in-stock inventory</li>
+                                            <li>Search results access to manufacturer data sheets on many line items</li>
+                                            <li>Search results customizable settings and filters</li>
+                                            <li>Search results supplier quality indicators</li>
+                                            <li>Supplier Quality Rating System (SQRS) to rate, and view ratings on, suppliers</li>
+                                            <li>Shopping cart link to select suppliers</li>
+                                            <li>Multi-Lingual Messaging System to send RFQs and POs to suppliers</li>
+                                            <li>Part Alerts to be notified when a part is added to netCOMPONENTS database</li>
+                                            <li>netCOMPONENTS Escrow (additional fees apply)</li>
+                                            <li>many more additional features &amp; functionality...</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </h2>
+                                <p>
+                                    Membership for purchasing agents, buyers and procurement professionals enables part searches on the netCOMPONENTS database and access to an array of powerful sourcing features.
+                                </p>	
+    
+                                
+                                    <a class="reg_link" href="javascript:goReg(800);">Register as a Member</a>
+    
+                            
+                            </div>
+                    
+                            <div class="reg_supplier top_square_left">
+                                
+                                <h2 class='title'>
+                                    Supplier (Seller) Services 
+                                    <div class='popup-wrapper'>
+                                        <a class="popup_container lnkucase_nodec" data-content="supplier_features">Features</a>
+    
+                                        <div class="popup" id="supplier_features" style="top: -122px; left: 0px; width: 458px;">
+                                            <p class="txt_margin">Uploading Inventory includes:</p>
+                                            <ul class="bulleted_list">
+                                            <li>List inventory</li>
+                                            <li>Unlimited locations and users</li>
+                                            <li>Receive qualified/targeted RFQs and POs</li>
+                                            <li>Multi-Lingual Messaging System to receive RFQs and POs from members</li>
+                                            <li>netCOMPONENTS Escrow (additional fees apply)</li>
+                                            <li>many more additional features &amp; functionality...</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </h2>
+                                <p>Stocking distributors and other companies with inventory for sale are able to register and list their inventory.</p>
+                                <a class="reg_link" href="javascript:goReg(700);"><span>Register as a Supplier</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clr"></div>
+                </div>
+                
+            </div>
+    
+            <div class="netcomp_bottom">
+    
+                <div class="footer">
+    
+                    <div class="ftr_social_items">
+                        <a rel="noopener" class="icon_facebook" href="javascript:tabOpen('https://www.facebook.com/netcomponents');" title=""></a>
+                        <a rel="noopener" class="icon_twitter" href="javascript:tabOpen('https://twitter.com/netcomponents');" title=""></a>
+    
+                    </div>
+                    <div class="ftr_menu_item"><a href="javascript:openModalStd('info.htm?int=1')">Information</a></div>
+                    <div class="ftr_menu_item"><a href="javascript:openModalStd('contact.htm?int=1')">Contact Us</a></div>
+                    <div class="ftr_menu_item"><a href="javascript:openModalStd('terms.htm?int=1')">Terms Of Use</a></div>
+                    <div class="ftr_menu_item"><a href="javascript:openModalStd('privacy.htm?int=1')">Privacy Policy</a></div>
+                    <div class="copy"><a href="copyright.htm">© Copyright 1997-2023, </a>
+                    <a href="https://www.netcomponents.com/sitemap/">netCOMPONENTS, Inc.</a></div>
+    
+                    </div>
+                <div class="clr"></div>
+            </div>
+        </div>
+        <!-- /.main -->
+    </div>
+
+    <div class='modal' id='login-modal'>
+        <div class='modal-overlay'></div>
+        <div class='modal-dialog'>
+            <div class='modal-close'></div>
+            <div class='modal-content'>
+                <div class='modal-title'>Login</div>
+                <div class='modal-body'>
+                    <form method='post' id='login-form'>
+                        <table class='modal-table login-table'>
+                            <tbody>
+                                <tr>
+                                    <th>Account #:</th>
+                                    <td><input type="text" size="18" name="org" maxlength="10" value="" id="org" required></td>
+                                </tr>
+                                <tr>
+                                    <th>Login Name:</th>
+                                    <td><input type="text" name="login" size="18" maxlength="15" value="" id='loginName' required></td>
+                                </tr>
+                                <tr>
+                                    <th>Password:</th>
+                                    <td><input type="password" size="18" name="pwd" data-hasqtip="1" aria-describedby="qtip-1" id='pwd' required></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" class="auto_login">
+                                        <input type="checkbox" value="1" name="auto" id="auto" checked="">&nbsp; <label for="auto">Automatically log me in.</label>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </form>
+                </div>
+                <div class='modal-footer'>
+                    <div class="float_lft"><a class="lnk" onclick="goPwd()">Forgot My Password</a></div>
+                    <input type="button" onclick="verifyLogin()" value="Login">
+                    <div class="clr"></div>
+                </div>
+            </div>
+           
+        </div>
+    </div>
+    <!-- /#login-modal -->
+
+
+    <div class='modal modal-lg' id='member-registration-modal'>
+        <div class='modal-overlay'></div>
+        <div class='modal-dialog'>
+            <div class='modal-close'></div>
+            <div class='modal-content'>
+                <div class='modal-title'>
+                    Member Registration
+                    <div class="wizard">
+                        <ul class="wizard-steps">
+                            <!-- --><li id="step-1" data-value="1" class="start-step active-step"><div><p>Company Information</p></div></li>
+                            <!-- --><li id="step-2" data-value="2" class=""><div><p>Membership Fee Payment Information</p></div></li>
+                            <!-- --><li id="step-3" data-value="3" class=""><div><p>Office Location Information</p></div></li>
+                            <!-- --><li id="step-4" data-value="4" class=""><div><p>User Information</p></div></li>
+                            <!-- --><li id="step-5" data-value="5" class=""><div><p>Administrative Contacts</p></div></li>
+                            <!-- --><li id="step-6" data-value="6" class="finish-step"><div><p>Finish</p></div></li>
+                            <!-- -->
+                        </ul>
+                    </div>
+                </div>
+                <div class='modal-body'>
+                    <p class="txt_margin">The member registration process enables you to set up netCOMPONENTS access for one location or for locations enterprise wide. You can then set up any number of buyers and contacts.</p>
+                    <form method='post' id='member-registration-form'>
+                        <table class='modal-table registration-table'>
+                            <tbody>
+                                <tr>				
+                                    <th class="req">Company:</th>
+                                    <td><input type="text" maxlength="30" name="compname" size="30" value=""></td></tr>
+                                <tr>
+                                    <th>Year Established:</th>
+                                    <td class="descr"><input type="text" name="year" size="4" maxlength="4" value=""></td>
+                                </tr>
+                                <tr>
+                                    <th></th>
+                                    <td class="txt_sm">Format year as: 1997, 2021</td>
+                                </tr>
+                
+                
+                                <tr>
+                                    <th>Employees:</th>
+                                    <td>
+                                        <select name="loc_employees">
+                                            <option value=""></option>
+                                            <option value="5">1 - 9</option>
+                                            <option value="15">10 - 19</option>
+                                            <option value="35">20 - 49</option>
+                                            <option value="75">50 - 99</option>
+                                            <option value="300">100 - 499</option>
+                                            <option value="750">500 - 999</option>
+                                            <option value="3000">1,000 - 4,999</option>
+                                            <option value="7500">5,000 - 9,999</option>
+                                            <option value="15000">10,000 - 19,999</option>
+                                            <option value="20000">20,000+</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">Annual Electronic Component Purchasing (USD):</td>
+                                </tr>
+                                <tr class="pdng_bot">
+                                    <td></td>							
+                                    <td>
+                                        <select name="loc_yearlysales">
+                                            <option value=""></option>
+                                            <option value="50000">0 - 99,999 (USD)</option>
+                                            <option value="175000">100,000 - 249,999 (USD)</option>
+                                            <option value="375000">250,000 - 499,999 (USD)</option>
+                                            <option value="750000">500,000 - 999,999 (USD)</option>
+                                            <option value="3000000">1,000,000 - 4,999,999 (USD)</option>
+                                            <option value="7500000">5,000,000 - 9,999,999 (USD)</option>
+                                            <option value="15000000">10,000,000 - 19,999,999 (USD)</option>
+                                            <option value="35000000">20,000,000 - 49,999,999 (USD)</option>
+                                            <option value="75000000">50,000,000 - 99,999,999 (USD)</option>
+                                            <option value="300000000">100,000,000 - 499,999,999 (USD)</option>
+                                            <option value="750000000">500,000,000 - 999,999,999 (USD)</option>
+                                            <option value="1000000000">1,000,000,000+ (USD)</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr class="pdng_bot">
+                                    <th class="req">Company Type:</th>
+                                    <td>
+                                        <select name="comptype">
+                                            <option value=""></option>
+                                            <option value="Original Equipment Manufacturer (OEM)">Original Equipment Manufacturer (OEM)</option>
+                                            <option value="Contract Assembly House (CEM)">Contract Assembly House (CEM)</option>
+                                            <option value="Distributor/Exporter/Reseller">Distributor/Exporter/Reseller</option>
+                                            <option value="Other">Other</option>
+                                        </select>
+                                    </td>
+                                </tr>	
+                                <tr>
+                                    <td colspan="2">If Company Type is <strong>OEM</strong> please list product(s) manufactured:</td>
+                                </tr>
+                                <tr class="pdng_bot">
+                                    <td></td>
+                                    <td><input type="text" maxlength="50" name="oem" size="30" value=""></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">If Company Type is <strong>Other</strong> please specify:</td>
+                                </tr>
+                                <tr>
+                                    <td></td>							
+                                    <td><input type="text" maxlength="30" name="other" size="30" value=""></td>
+                                </tr>
+                                <tr class="pdng_bot">
+                                    <td></td>
+                                    <td><span class="txt_sm">Example: Design House, Repair Facility, Research Institution</span></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">Please indicate below how you found out about our service:</td>
+                                </tr>
+                                <tr class="pdng_bot">
+                                    <td></td>
+                                    <td><input type="text" maxlength="50" name="customerfindout" size="30" value=""></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </form>
+                </div>
+                <div class='modal-footer'>
+                    <input type="button" class="action_btn" value="Next >>" onclick="nxt(2,1)" id="button2" name="button2" disabled="">
+                    <input type="button" class="action_btn" value="Cancel" onclick="closeModal()" id="button1" name="button1" disabled="">
+                </div>
+            </div>
+           
+        </div>
+    </div>
+    <!-- /#member-registration-modal -->
+
+
+    <script src='js/jquery.js'></script>
+    <script src='js/script.js'></script>
+    <script>
+        
+        function verifyLogin(){
+            var account = $("#login-form #org");
+            var username = $("#login-form #loginName");
+            var password = $("#login-form #pwd");
+            var auto = $("#login-form #auto");
+
+            if(!username.val() || !password.val() || !account.val()){
+                alert("Please fill all the fields");
+                return false;
+            }
+
+            $("#login-form").submit();
+        }
+
+        var step=1;
+
+        function memberRegistrationFormStep1(){
+            var isCompanyFilled = false,
+                isYearEstablishedFilled = false,
+                isEmployeesFilled = false,
+                isAnnualECPurchasingFilled =false,
+                isCompanyTypeFilled = false,
+                isOemFilled=false
+
+            
+        }
+        
+
+        function websiteSwitch(){
+            $(document).on("click",".c-toggler", function(){
+                $(this).toggleClass("active");
+                // var currentSiteUrl =
+                setTimeout(()=>{
+                    if(window.location.pathname === '/index.html'){
+                        window.location.href='/site2/index.html'
+                    }
+                },1500)
+            })
+        }
+
+        $(function(){
+            websiteSwitch();
+        })
+    </script>
+</body>
+</html>
