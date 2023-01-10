@@ -230,6 +230,24 @@ p{
     padding:25px 15px;
     font-size: 16px;
 }
+
+
+.title-bordered{
+    border-bottom: 2px dashed #ccc;
+    color: #38626B;
+    margin-bottom:30px !important;
+    margin-top: 20px !important;
+    font-size: 18px;
+    padding-bottom: 5px !important;
+}
+
+@media screen and (min-width:992px){
+    .title-bordered{
+        margin-top: 30px !important;
+        font-size:20px !important;
+        margin-bottom: 50px !important;
+    }
+}
 /* header */
 .c-header{
  background-color: #000;
@@ -459,6 +477,7 @@ p{
 .c-form .form-group{
     margin-bottom: 10px;
 }
+.c-form select,
 .c-form input{
     height:40px;
     border-bottom:1px solid #333 !important;
@@ -474,10 +493,35 @@ p{
     font-weight: 600;
 }
 
+.c-form input[type="checkbox"]{
+    height:20px;
+    width:20px;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    top:-1px;
+}
+
 .c-form p{
     font-size: 14px;
 }
 
+.c-form--signup .form-group{ 
+    margin-bottom:30px;
+}
+
+.c-form--signup label{
+    margin-bottom:5px;
+}
+
+.c-form--signup a{
+    color: #1D90A5;
+    text-decoration: underline;
+}
+
+.c-form--signup  .c-btn{
+    margin:10px 0;
+}
 /* info section */
 
 .c-info-section{
